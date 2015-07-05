@@ -171,6 +171,7 @@ module.exports = function(source) {
 				parser: loadModule ? MyParser : undefined,
 				filename: req,
 				self: query.self,
+				doctype: query.doctype,
 				globals: ["require"].concat(query.globals || []),
 				pretty: query.pretty,
 				locals: query.locals,
